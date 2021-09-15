@@ -17,6 +17,7 @@
 		947D56AB26F18F3B0050C063 /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AA26F18F3B0050C063 /* FieldType.swift */; };
 		947D56AD26F18F5D0050C063 /* ValidationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AC26F18F5D0050C063 /* ValidationState.swift */; };
 		947D56AF26F192780050C063 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AE26F192780050C063 /* Validation.swift */; };
+		947D56B126F19A850050C063 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 947D56B026F19A850050C063 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		947D56AA26F18F3B0050C063 /* FieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldType.swift; sourceTree = "<group>"; };
 		947D56AC26F18F5D0050C063 /* ValidationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationState.swift; sourceTree = "<group>"; };
 		947D56AE26F192780050C063 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		947D56B026F19A850050C063 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		947D568826F17DC10050C063 = {
 			isa = PBXGroup;
 			children = (
+				947D56B026F19A850050C063 /* README.md */,
 				947D569326F17DC10050C063 /* Password Validator */,
 				947D569226F17DC10050C063 /* Products */,
 			);
@@ -152,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947D56B126F19A850050C063 /* README.md in Resources */,
 				947D569C26F17DC40050C063 /* Preview Assets.xcassets in Resources */,
 				947D569926F17DC40050C063 /* Assets.xcassets in Resources */,
 			);
