@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		947D569526F17DC10050C063 /* PasswordValidatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D569426F17DC10050C063 /* PasswordValidatorApp.swift */; };
+		947D569726F17DC10050C063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D569626F17DC10050C063 /* ContentView.swift */; };
+		947D569926F17DC40050C063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947D569826F17DC40050C063 /* Assets.xcassets */; };
+		947D569C26F17DC40050C063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947D569B26F17DC40050C063 /* Preview Assets.xcassets */; };
+		947D56A526F17E700050C063 /* ValidationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56A426F17E700050C063 /* ValidationFormViewModel.swift */; };
+		947D56A726F181870050C063 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56A626F181870050C063 /* String+Extension.swift */; };
+		947D56A926F18F190050C063 /* ValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56A826F18F190050C063 /* ValidationType.swift */; };
+		947D56AB26F18F3B0050C063 /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AA26F18F3B0050C063 /* FieldType.swift */; };
+		947D56AD26F18F5D0050C063 /* ValidationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AC26F18F5D0050C063 /* ValidationState.swift */; };
+		947D56AF26F192780050C063 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D56AE26F192780050C063 /* Validation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		947D569126F17DC10050C063 /* Password Validator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Validator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		947D569426F17DC10050C063 /* PasswordValidatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorApp.swift; sourceTree = "<group>"; };
+		947D569626F17DC10050C063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		947D569826F17DC40050C063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		947D569B26F17DC40050C063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		947D569D26F17DC40050C063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947D56A426F17E700050C063 /* ValidationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFormViewModel.swift; sourceTree = "<group>"; };
+		947D56A626F181870050C063 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		947D56A826F18F190050C063 /* ValidationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationType.swift; sourceTree = "<group>"; };
+		947D56AA26F18F3B0050C063 /* FieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldType.swift; sourceTree = "<group>"; };
+		947D56AC26F18F5D0050C063 /* ValidationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationState.swift; sourceTree = "<group>"; };
+		947D56AE26F192780050C063 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		947D568E26F17DC10050C063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		947D568826F17DC10050C063 = {
+			isa = PBXGroup;
+			children = (
+				947D569326F17DC10050C063 /* Password Validator */,
+				947D569226F17DC10050C063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		947D569226F17DC10050C063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				947D569126F17DC10050C063 /* Password Validator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		947D569326F17DC10050C063 /* Password Validator */ = {
+			isa = PBXGroup;
+			children = (
+				947D569426F17DC10050C063 /* PasswordValidatorApp.swift */,
+				947D56A326F17E390050C063 /* Components */,
+				947D569626F17DC10050C063 /* ContentView.swift */,
+				947D569826F17DC40050C063 /* Assets.xcassets */,
+				947D569D26F17DC40050C063 /* Info.plist */,
+				947D569A26F17DC40050C063 /* Preview Content */,
+			);
+			path = "Password Validator";
+			sourceTree = "<group>";
+		};
+		947D569A26F17DC40050C063 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				947D569B26F17DC40050C063 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		947D56A326F17E390050C063 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				947D56A426F17E700050C063 /* ValidationFormViewModel.swift */,
+				947D56AE26F192780050C063 /* Validation.swift */,
+				947D56AC26F18F5D0050C063 /* ValidationState.swift */,
+				947D56AA26F18F3B0050C063 /* FieldType.swift */,
+				947D56A826F18F190050C063 /* ValidationType.swift */,
+				947D56A626F181870050C063 /* String+Extension.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		947D569026F17DC10050C063 /* Password Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947D56A026F17DC40050C063 /* Build configuration list for PBXNativeTarget "Password Validator" */;
+			buildPhases = (
+				947D568D26F17DC10050C063 /* Sources */,
+				947D568E26F17DC10050C063 /* Frameworks */,
+				947D568F26F17DC10050C063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Password Validator";
+			productName = "Password Validator";
+			productReference = 947D569126F17DC10050C063 /* Password Validator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		947D568926F17DC10050C063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					947D569026F17DC10050C063 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 947D568C26F17DC10050C063 /* Build configuration list for PBXProject "Password Validator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 947D568826F17DC10050C063;
+			productRefGroup = 947D569226F17DC10050C063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				947D569026F17DC10050C063 /* Password Validator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		947D568F26F17DC10050C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947D569C26F17DC40050C063 /* Preview Assets.xcassets in Resources */,
+				947D569926F17DC40050C063 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		947D568D26F17DC10050C063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947D56A926F18F190050C063 /* ValidationType.swift in Sources */,
+				947D56A726F181870050C063 /* String+Extension.swift in Sources */,
+				947D56AB26F18F3B0050C063 /* FieldType.swift in Sources */,
+				947D569726F17DC10050C063 /* ContentView.swift in Sources */,
+				947D569526F17DC10050C063 /* PasswordValidatorApp.swift in Sources */,
+				947D56A526F17E700050C063 /* ValidationFormViewModel.swift in Sources */,
+				947D56AF26F192780050C063 /* Validation.swift in Sources */,
+				947D56AD26F18F5D0050C063 /* ValidationState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		947D569E26F17DC40050C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		947D569F26F17DC40050C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		947D56A126F17DC40050C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Password Validator/Preview Content\"";
+				DEVELOPMENT_TEAM = ZGYBGNZAN7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Password Validator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wellsfargo.Password-Validator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		947D56A226F17DC40050C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Password Validator/Preview Content\"";
+				DEVELOPMENT_TEAM = ZGYBGNZAN7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Password Validator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wellsfargo.Password-Validator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		947D568C26F17DC10050C063 /* Build configuration list for PBXProject "Password Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947D569E26F17DC40050C063 /* Debug */,
+				947D569F26F17DC40050C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947D56A026F17DC40050C063 /* Build configuration list for PBXNativeTarget "Password Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947D56A126F17DC40050C063 /* Debug */,
+				947D56A226F17DC40050C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 947D568926F17DC10050C063 /* Project object */;
+}
