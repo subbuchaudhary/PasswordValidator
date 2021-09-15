@@ -58,7 +58,7 @@ struct ContentView: View {
                             Spacer()
                         }
                     }
-                    .disabled(!userViewModel.isValid)
+                    .disabled(!userViewModel.isValid) // disabling the button till all validations passed
                     .animation(.default)
                 }
             }

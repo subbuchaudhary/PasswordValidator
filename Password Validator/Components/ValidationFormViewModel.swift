@@ -16,10 +16,11 @@ final class ValidationFormViewModel: ObservableObject {
     private var cancellableSet: Set<AnyCancellable> = []
     
     init() {
+        // to check validations
         passwordPublisher.receive(on: RunLoop.main)
             .assign(to: \.validations, on: self)
             .store(in: &cancellableSet)
-        
+        // to check isValid or not
         passwordPublisher.receive(on: RunLoop.main)
             .map { validations in
                 return validations.filter { validation in
@@ -34,7 +35,7 @@ final class ValidationFormViewModel: ObservableObject {
         $password.removeDuplicates().map {
             var validations: [Validation] = []
             validations.append(Validation(text: $0, id: 0, textFieldType: .password, validationType: .notEmpty))
-            validations.append(Validation(text: $0, id: 1, textFieldType: .password, validationType: .minCharacters(count: 8)))
+            validations.append(Validation(text: $0, id: 1, textFieldType: .password, validationType: .minCharacters(count: 8))) // validation for password characters should atleast have 8
             validations.append(Validation(text: $0, id: 2, textFieldType: .password, validationType: .specialCharacter))
             validations.append(Validation(text: $0, id: 3, textFieldType: .password, validationType: .upperCaseLetters))
             validations.append(Validation(text: $0, id: 4, textFieldType: .password, validationType: .lowerCaseLetters))
