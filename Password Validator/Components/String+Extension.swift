@@ -24,6 +24,10 @@ public extension String {
         return stringFulfillsRegex(regex: ".*[^A-Za-z0-9].*")
     }
     
+    func hasStrength() -> Bool {
+        return stringFulfillsRegex(regex: "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&<>*~:`-]).{9,}$")
+    }
+    
     private func stringFulfillsRegex(regex: String) -> Bool {
         let text = NSPredicate(format: "SELF MATCHES %@", regex)
         return text.evaluate(with: self)
